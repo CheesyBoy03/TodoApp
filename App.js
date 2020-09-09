@@ -13,14 +13,6 @@ export default function App() {
       title: title,
     }
 
-    //setTodos(todos.concat([ newTodo ]))
-    //setTodos((prevTodos) => {
-    //  return [
-    //  ...prevTodos,
-    //    newTodo
-    //  ]
-    //})
-
     setTodos(prev => [...prev, {
       id: Date.now().toString(),
       title: title,
@@ -49,8 +41,5 @@ const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 30,
     paddingVertical: 20,
-    //justifyContent: 'center',
-    //flexDirection: 'row',
-    //alignItems: 'center',
   },
 });
